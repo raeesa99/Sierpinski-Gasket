@@ -28,8 +28,6 @@ class Dot {
 
 constructPoint() {
     let point = document.createElement('div')
-    // this.x = x.value - 4
-    // this.y = y.value - 4
     point.style.left = this.x + 'px';
     point.style.top  = this.y + 'px';
     point.classList.add('point')
@@ -80,7 +78,7 @@ async function xy() {
 
 
 while (true) {
-    await wait(100);
+    await wait(10);
 
     let randPoint = points[Math.floor(Math.random()* points.length)];
 
